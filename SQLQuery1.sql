@@ -140,14 +140,14 @@ ORDER BY VAT DESC
 --    line showing "Good", "Bad". Good if its greater than average sales
 
 SELECT 
-ROUND(AVG(Unit_price*Quantity),2) AS total_sales
+ROUND(AVG(Quantity),2) AS total_sales
 FROM Walmart;
 
 SELECT
 Product_line,
-ROUND(AVG(Unit_price*Quantity),2) AS total_sales,
+ROUND(AVG(Quantity),2) AS total_sales,
 CASE
-     WHEN ROUND(AVG(Unit_price*Quantity),2) > 307.59 THEN 'Good'
+     WHEN ROUND(AVG(Quantity),2) > 307.59 THEN 'Good'
 	 ELSE 'Bad'
 	 END
 FROM Walmart
@@ -270,7 +270,7 @@ ORDER BY avg_rating DESC
 SELECT TOP 3
 day_name,
 ROUND(AVG(Rating),2) AS avg_rating,
-ROUND(AVG(Unit_price*Quantity),2) AS total_sales
+ROUND(AVG(Quantity),2) AS total_sales
 FROM Walmart
 GROUP BY day_name
 ORDER BY avg_rating DESC
