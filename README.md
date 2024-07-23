@@ -103,4 +103,6 @@ This will help use generate some new columns from existing ones.
 9. Which day fo the week has the best avg ratings?
 10. Which day of the week has the best average ratings per branch?
 
-For the Code, Cheak the [SQLQuery1.sql](https://github.com/Shubhamprdd/Walmart-Sales-Analysis/blob/main/SQLQuery1.sql) file
+For the Code, 
+
+Cheak the [SQLQuery1.sql](https://github.com/Shubhamprdd/Walmart-Sales-Analysis/blob/main/SQLQuery1.sql) file
